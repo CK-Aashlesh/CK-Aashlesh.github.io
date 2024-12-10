@@ -330,6 +330,9 @@ form {
     background: #ffffff;
     border-radius: 10px;
 }
+input , textarea , button{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 input, textarea {
     width: 100%;
     margin-bottom: 15px;
@@ -365,4 +368,52 @@ textarea::placeholder{
 button:hover {
     background-color: #594C8D;
     color: #ffffff;
+}
+
+/* footer */
+
+.main-foot{
+    height: 30vh;
+    width: 100%;
+    background-color: #414040;
+}
+
+.main-footxt h4{
+    color: #ccc;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-top: 60px;
+    padding-left: 150px;
+}
+.main-footxt span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.main-footxt a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 20px;
+}
+.ri-arrow-up-double-line{
+    width: 60px;
+    height: 100px;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 80px;
+    padding-left: 5px;
+}
+.main-foot a{
+    text-decoration: underline;
+}
+.main-quar{
+    width: 60px;
+    height: 80px;
+    margin-left: 92%;
+    background-color: #633da8;
+}
+.main-quar a{
+    text-decoration: none;
 }
