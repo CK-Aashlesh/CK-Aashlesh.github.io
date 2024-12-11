@@ -25,6 +25,17 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "G9UzrlofA8k7YVLAy",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -157,12 +168,11 @@
             <h2>Contact Me</h2>
         </div>
         <div class="contnt">
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="2e51a3c2-a62d-4919-9785-2ae58f30b030">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Enter Email" required>
-                <textarea placeholder="Write Something" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
+            <form>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Enter Email" required>
+                <textarea id="message" placeholder="Write Something" rows="5" required></textarea>
+                <button type="submit" onclick="sendMail()">Send Message</button>
             </form>
         </div>
     </div> 
